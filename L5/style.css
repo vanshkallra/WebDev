@@ -1,4 +1,8 @@
 body{
     background-color: black;
     color: aliceblue;
+    
+}
+td{
+    border: 2px solid rgb(237, 153, 153);
 }
