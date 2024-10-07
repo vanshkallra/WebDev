@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORMS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Learn about FORMS</h1>
+    <h2>Form to apply for Student Id card</h2>
+    <form action="/submit.php" method="post">
+        <div>
+            <label for="username">Enter your username: </label>
+            <input type="text" required autofocus id="username" name="username" placeholder="Enter your username ">
+        </div>
+
+        <div>
+            <label for="age">Enter your age: </label>
+            <input type="text" pattern="integer" id="age" name="age" placeholder="Enter your age ">
+        </div>
+
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="Subscirbe" value="yes">
+            <label for="subscribe">Subscribe to Veritasium</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="comment">Write comment</label>
+        </div>
+        <div>
+            <textarea name="comment" id="comment" rows="5" cols="30" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <div>
+            <label for="fruits">Choose your fav fruit</label>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+            </select>
+        </div>
+        
+
+
+    </form>
 </body>
 </html>
